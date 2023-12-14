@@ -1,0 +1,63 @@
+.about
+    background-image: url(../img/Background-about.png)
+    background-repeat: no-repeat
+    background-size: 100% 50%
+    background-position: top center
+    padding-block-start: calc((122rem / 16) + (185 - 122) * ((100vw - 375rem / 16) / (1920 - 375)))
+    margin-block-end: 80px
+    @media (max-width: 900px)
+        margin-block-end: 70px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        background-color: $color-white
+        padding: calc((32rem / 16) + (85 - 32) * ((100vw - 375rem / 16) / (1920 - 375))) calc((12rem / 16) + (100 - 12) * ((100vw - 375rem / 16) / (1920 - 375)))
+        position: relative
+        @media (max-width: 900px)
+            flex-direction: column
+            align-items: center
+        &::after
+            position: absolute
+            content: ''
+            width: 100.5%
+            height: 100.3%
+            border: 4px dashed #0E4A8B
+            top: -4px
+            left: -4px
+            clip-path: polygon(0 39%, 100% 39%, 100% 100%, 0% 100%)
+            @media (max-width: 900px)
+                border: none
+    &__content
+        max-width: 472px
+        margin-inline-end: 15px
+        @media (max-width: 900px)
+            margin-block-end: 30px
+    &__title
+        text-align: left
+        margin-block-end: 25px
+    &__text
+        margin-block-end: 25px
+    &__numbers
+        display: flex
+        align-items: center
+        &-title
+            font-family: Rubik
+            font-size: calc((32rem / 16) + (50 - 32) * ((100vw - 375rem / 16) / (1920 - 375)))
+            font-weight: 600
+            line-height: normal
+            color: $color-blue
+            width: 180px
+            text-align: right
+            margin-inline-end: 20px
+            @media (max-width: 475px)
+                text-align: left
+                width: auto
+        &-text
+            font-size: 20px
+            line-height: 120%
+            color: $color-dark
+            margin-inline-start: 20px
+            @media (max-width: 475px)
+                font-size: 18px
+    &-container 
+        padding: 0 10px

@@ -1,0 +1,49 @@
+.benefits
+    background: url('../img/background-left.png'), url('../img/background-right.png')
+    background-position: left bottom, right top
+    background-repeat: no-repeat
+    padding-block-end: calc((40rem / 16) + (130 - 40) * ((100vw - 375rem / 16) / (1920 - 375)))
+    padding-top: 145px
+    @media (max-width: 1160px)
+        background: none
+    @media (max-width: 900px)
+            padding-top: 80px
+    @media (max-width: 500px)
+            padding-top: 40px
+
+    & .container 
+        position: relative
+
+    &__wrapper
+        max-width: 873px
+        margin: 0 auto
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-row-gap: 70px
+        margin-block-start: 90px
+        @media (max-width: 1160px)
+            grid-template-columns: 1fr
+    &__item
+        display: flex
+        max-width: 390px
+        @media (max-width: 1160px)
+            max-width: 100%
+    &__icon
+        margin-inline-end: 48px
+        width: 68px
+        height: 68px
+    &__content
+        position: relative
+        &:before
+            content: ''
+            width: 1px
+            height: 55px
+            background-color: $color-gray-benefit
+            position: absolute
+            top: 0
+            left: -25px
+    &__title
+        font-family: Rubik
+        font-size: 25px
+        line-height: 130%
+        color: $color-dark

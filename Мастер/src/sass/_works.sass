@@ -1,0 +1,18 @@
+.works
+    margin-block-end: 50px
+    &__content
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 20px 30px
+        @media (max-width: 900px)
+            grid-template-columns: repeat(2, 1fr)
+        @media (max-width: 520px)
+            grid-template-columns: 1fr
+
+    &__title
+        font-family: Rubik
+        font-size: calc((18rem / 16) + (25 - 18) * ((100vw - 375rem / 16) / (1920 - 375)))
+        line-height: 130%
+        color: $color-dark-text
+        padding: 0 20px
+        text-align: center

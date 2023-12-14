@@ -1,0 +1,128 @@
+.footer
+    background-color: $color-blue-dark
+    padding-block-start: 30px
+    &__wrapper
+        display: flex
+        flex-direction: column
+        @media (max-width: 900px)
+            align-items: center
+    &__wrapper-top
+        display: flex
+        justify-content: space-between
+        margin-block-end: 10px
+        @media (max-width: 1075px)
+            order: 3
+            display: block
+    &__form
+        &-box
+            display: flex
+            align-items: center
+            @media (max-width: 1075px)
+                justify-content: space-between
+            @media (max-width: 900px)
+                flex-direction: column
+        &-wrapper
+            order: 2
+        &-group
+            display: flex
+            align-items: center
+            @media (max-width: 900px)
+                flex-direction: column
+
+    &-input
+        margin-block-end: 0px
+        background-color: transparent
+        width: 318px
+        margin: 0 20px
+        @media (max-width: 900px)
+            margin: 20px 0
+
+    &-button
+        margin-block-end: 0px
+        background-color: $color-white
+        color: $color-dark-text
+        transition: .3s
+        @media (max-width: 900px)
+            width: 100%
+        &:hover
+            background-color: $color-red
+            color: $color-white
+    &-social
+        justify-content: flex-end
+        margin-block-start: 25px
+        
+    &__wrapper-bottom
+        display: grid
+        grid-template-columns: 0.7fr 1.3fr 1.5fr
+        margin-block-end: 40px
+        order: 1
+        @media (max-width: 900px)
+            grid-template-columns: 1fr
+            text-align: center
+            margin-block-end: 20px
+    &__bottom-item
+        line-height: 0px
+        & a
+            font-family: Rubik
+            font-size: 14px
+            font-weight: 400
+            line-height: 130%
+            color: $color-white
+    &__bottom-list
+        display: grid
+        grid-row-gap: 16px
+        @media (max-width: 900px)
+            display: none
+        &_main
+            grid-row-gap: 20px
+            @media (max-width: 900px)
+                display: grid
+            & a
+                font-family: Roboto
+                font-size: 16px
+                font-weight: 600
+                line-height: 135.023%
+    &__item-box
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+    &__policy
+        padding: 10px 0
+        border-top: 1px $color-gray-text solid
+        margin-block-start: 10px
+        &-wrapper
+            display: flex
+            justify-content: space-between
+            font-family: Rubik
+            font-size: 14px
+            line-height: 130%
+            @media (max-width: 520px)
+                flex-direction: column
+                align-items: center
+        &-link
+            @media (max-width: 520px)
+                margin-block: 20px
+.logo-box
+    max-width: 175px
+    @media (max-width: 1075px)
+        display: none
+    &_mobile
+        display: none
+        order: 0
+        @media (max-width: 1075px)
+            display: block
+            margin-block-end: 30px
+    &__top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-block-end: 10px
+        &-title
+            color: $color-white
+            font-weight: 600
+            line-height: 120%
+            margin-inline-start: 10px
+        &-text
+            font-size: 12px
+            font-weight: 500
+            line-height: 151.523%

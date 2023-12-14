@@ -1,0 +1,25 @@
+.feedback
+    margin-block-end: 80px
+    &-title 
+        text-align: left
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        &-top 
+            display: flex
+            justify-content: space-between
+            margin-block-end: 25px
+            
+    &__item
+        background-color: $color-gray-lable
+        padding: 60px 70px
+    
+    &__name-wrapper
+        display: flex
+        align-items: center
+        &-img
+            margin-inline-end: 10px
+            border-radius: 100%
+
+.dark-gray
+    background-color: $color-gray-light

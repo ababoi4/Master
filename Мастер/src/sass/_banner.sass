@@ -1,0 +1,128 @@
+.banner
+    background: url(../img/Background-header.png) center / cover no-repeat
+    overflow: hidden
+    padding-bottom: calc((30rem / 16) + (120 - 30) * ((100vw - 375rem / 16) / (1920 - 375)))
+    @media (max-width: 900px)
+        overflow: visible
+    &__wrapper-text
+        max-width: 570px
+        order: 2
+    &__title
+        font-family: Rubik
+        font-size: calc((32rem / 16) + (60 - 32) * ((100vw - 375rem / 16) / (1920 - 375)))
+        font-weight: 700
+        line-height: 130%
+        color: $color-white
+        margin-block-end: 16px
+    &__text
+        color: $color-white
+    &__content-wrapper
+        display: flex
+        justify-content: space-between
+        position: relative
+        @media (max-width: 900px)
+            flex-direction: column
+            align-items: center
+    &__image
+        position: absolute
+        right: -250px
+        top: -236px
+        @media (max-width: 1070px)
+            max-width: 50%
+            top: -100px
+            right: -100px
+        @media (max-width: 900px)
+            position: static
+            order: 1
+            max-width: 80%
+            transform: translateY(-40px)
+
+.top-menu
+    background-color: rgba(9, 18, 66, 0.25)
+    padding-block: 25px
+    margin-block-end: 150px
+    z-index: 1
+    position: relative
+    @media (max-width: 1070px)
+        margin-block-end: 30px
+    @media (max-width: 900px)
+        display: none
+    &__content
+        display: flex
+        justify-content: space-between
+    &__list
+        display: flex
+    &__item
+        padding-inline-end: 30px
+        @media (max-width: 970px)
+            padding-inline-end: 20px
+        &:last-child a
+            border-right: 0px rgba(255, 255, 255, 0.20) solid
+
+    &__item a
+        color: $color-white
+        font-weight: 600
+        line-height: 135.023%
+        transition: .3s
+        border-right: 2px rgba(255, 255, 255, 0.20) solid
+        padding-inline-end: 30px
+        @media (max-width: 970px)
+            padding-inline-end: 20px
+        &:hover
+            text-decoration: underline 2px
+            text-underline-offset: 30px
+    &__social
+        display: flex
+    &__social-item
+        margin-inline-end: 25px
+        &:last-child
+            margin-inline-end: 0px
+
+.callback
+    display: flex
+    justify-content: space-between
+    position: absolute
+    z-index: 2
+    background-color: #f63150
+    color: #fff
+    padding: 22px 40px
+    left: 50%
+    top: -200px
+    transform: translateX(-50%)
+    width: calc( 100% - 40px )
+    @media (max-width: 900px)
+        display: none
+        flex-direction: column
+        padding: 20px
+    &_mobile
+        display: none
+        @media (max-width: 900px)
+            position: static
+            transform: translateY(-50px)
+            order: 1
+            display: flex
+            width: 100%
+
+    &__phone
+        display: flex
+        align-items: center
+        & img
+            @media (max-width: 900px)
+                width: 40px
+
+    &__number
+        font-family: Rubik
+        font-size: calc((25rem / 16) + (48 - 25) * ((100vw - 375rem / 16) / (1920 - 375)))
+        font-weight: 600
+        line-height: 120%
+        margin-inline-start: 40px
+        @media (max-width: 900px)
+            margin-inline-start: 20px
+
+    &__text
+        max-width: 320px
+        align-items: center
+        display: flex
+        @media (max-width: 900px)
+            max-width: 100%
+            margin-block-start: 20px

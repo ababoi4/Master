@@ -1,0 +1,44 @@
+//Заголовок над секцией с красной плашкой слева
+.label
+    background-color: $color-gray-lable
+    border-left: 4px $color-red solid
+    display: inline
+    margin-block-end: 10px
+    & span
+        margin-inline: 10px
+        color: $color-gray-text
+        font-family: Rubik
+        font-size: 14px
+        line-height: 130%
+
+.title
+    font-family: Rubik
+    font-size: calc((24rem / 16) + (35 - 24) * ((100vw - 375rem / 16) / (1920 - 375)))
+    font-weight: 600
+    line-height: 130%
+    color: $color-dark
+    text-align: center
+    margin-block-end: 30px
+
+.button
+    height: 60px
+    background-color: $color-red
+    font-family: Rubik
+    font-weight: 600
+    line-height: 135.023%
+    font-size: 16px
+    color: $color-white
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
+    &::after
+        content: ''
+        background: url('../icons/button.svg') right bottom / cover no-repeat
+        position: absolute
+        bottom: -40px
+        right: -20px
+        width: 68px
+        height: 105px
+

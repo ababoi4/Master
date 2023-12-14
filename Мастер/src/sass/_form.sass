@@ -1,0 +1,60 @@
+
+.incut-form
+    background-color: $color-blue
+    padding: calc((30rem / 16) + (95 - 30) * ((100vw - 375rem / 16) / (1920 - 375))) 0
+    @media (max-width: 1180px)
+        padding-block-end: 0px
+    &__title
+        color: $color-white
+        text-align: left
+        margin-block-end: 13px
+    &__subtitle
+        margin-block-end: 30px
+    &__box
+        display: flex
+        justify-content: space-between
+        position: relative
+        @media (max-width: 1180px)
+            flex-direction: column
+            align-items: center
+        &-content
+            color: $color-white
+            max-width: 486px
+
+.form-group
+    display: flex
+    flex-direction: column
+
+.fields
+    &__input
+        padding: 21px 0 15px 30px
+        margin-block-end: 30px
+        border: 1px solid $color-gray-text
+        background-color: $color-gray-lable
+        &:focus
+            outline: none
+    &__text
+        margin-block-end: 30px
+    &__icon-box, & a
+        margin-inline: 0px
+        color: $color-white
+.content-white
+    margin-inline-start: 0px
+    color: $color-white
+.form
+    &__button
+        border: none
+        width: 215px
+        margin-block-end: 10px
+        cursor: pointer
+        
+    &__box-image
+        position: absolute
+        top: -200px
+        right: -140px
+        @media (max-width: 1470px)
+            right: 0px
+        @media (max-width: 1180px)
+            position: static
+.fields__icon-box a 
+    color: $color-white

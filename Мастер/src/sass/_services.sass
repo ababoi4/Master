@@ -1,0 +1,81 @@
+.services
+    position: relative
+    margin-block-end: 100px
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 24px 30px
+        margin-block-end: 65px
+        @media (max-width: 940px)
+            grid-template-columns: repeat(2, 1fr)
+        &-link
+            position: relative
+            &:hover
+                .services__item
+                    &-img-hover
+                        animation: card 1s forwards
+
+                    &-img
+                        display: none
+
+                    &-phone-red
+                        display: block
+
+                    &-phone
+                        display: none
+
+    &__item
+        background-color: $color-blue
+        display: grid
+        align-items: flex-end
+        height: 384px
+        @media (max-width: 580px)
+            height: 192px
+        &-phone 
+            width: 46px
+            height: 46px
+        &-content
+            display: flex
+            padding: 15px 25px
+            z-index: 1
+        &-img
+            position: absolute
+            top: 0
+            right: 0
+            z-index: 0
+            @media (max-width: 580px)
+                width: 123px
+                height: 107px
+                bottom: 0
+                left: -30px
+            
+        &-img-hover
+            opacity: 0
+            position: absolute
+            top: 0
+            left: 0
+            height: 100%
+            z-index: 0
+        &-phone-red
+            display: none
+            width: 46px
+            height: 46px
+        &-title
+            font-family: Rubik
+            font-size: calc((14rem / 16) + (24 - 14) * ((100vw - 320rem / 16) / (1920 - 320)))
+            font-weight: 600
+            line-height: 130%
+            text-transform: uppercase
+            color: $color-gray-lable
+    &__button
+        margin: 0 auto
+        width: 215px
+        height: 60px
+       
+        
+
+    @keyframes card
+        0%
+            opacity: 0
+        100%
+            opacity: 1
